@@ -1,0 +1,141 @@
+body {
+    background: linear-gradient(158deg, #F00 -28.44%, #2707A9 85.81%);
+    justify-content: center;
+}
+
+img:hover {
+    opacity: .5;
+    transition: .9s;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+.navbar {
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    width: 100%;
+    z-index: 1;
+
+
+}
+
+.btn-header {
+    text-shadow: 0 4px 4px black;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 3%;
+    font-size: 35px;
+    margin-left: 4%;
+    margin-right: 4%;
+
+}
+
+.navitem {
+    color: white;
+    font-family: Jura, serif;
+}
+
+
+h1  {
+    margin-top: 2.5%;
+    font-family: Jura, serif;
+    justify-content: center;
+    text-align: center;
+    font-size: 70px;
+    color: white;
+}
+
+#description {
+    color: white;
+    margin-top: 6%;
+    margin-left: 4%;
+    margin-right: 4%;
+    font-size: 35px;
+    width: 30%;
+
+}
+
+
+#titre_qualités {
+    color: white;
+    margin-top: 10%;
+    text-align: center;
+    font-size: 35px;
+
+}
+
+.icone   {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 4%;
+    margin-right: 4%;
+    margin-top: 6%;
+}
+
+.text_qualités {
+    color: white;
+
+    text-align: center;
+    font-size: 35px;
+}
+
+.item {
+    margin: 5px;
+}
+
+#presentation {
+    color: white;
+    margin-top: 6%;
+    text-align: center;
+    font-size: 35px;
+
+}
+
+#youtube {
+    margin-top: 4%;
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+#retrouvez-nous {
+    color: white;
+    margin-top: 6%;
+    text-align: center;
+    font-size: 35px;
+
+}
+
+#google {
+    margin-left: 4%;
+    margin-right: 4%;
+    width: 91.9%;
+    height: 600px;
+    justify-content: center;
+    margin-bottom: 2%;
+}
+
+.footer {
+    margin-right: 4%;
+    display: flex;
+}
+
+.reseaux {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 4%;
+}
+
+
+#copyright {
+    margin-top: 2%;
+    margin-left: 81%;
+    color: white;
+    font-size: 20px;
+}
+

@@ -1,0 +1,92 @@
+body {
+    background: linear-gradient(268deg, #F00 -29.51%, #2500BB 79.62%);
+}
+
+h1  {
+    margin-top: 2.5%;
+    font-family: Jura, serif;
+    justify-content: center;
+    text-align: center;
+    font-size: 70px;
+    color: white;
+}
+
+.navbar {
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    width: 100%;
+    z-index: 1;
+
+
+}
+
+.btn-header {
+    text-shadow: 0 4px 4px black;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 3%;
+    font-size: 35px;
+    margin-left: 4%;
+    margin-right: 4%;
+
+}
+
+.navitem {
+    color: white;
+    font-family: Jura, serif;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 4%;
+    margin-right: 4%;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.item {
+    flex: 0 0 calc(15.43% - 1px);   /* flex-basis adjustment for margin */
+    margin: 100px;
+}
+
+img {
+    width: 100%;
+    max-height: 300px;
+
+}
+
+
+img:hover {
+    opacity: .5;
+    transition: .9s;
+}
+
+.produits {
+    color: white;
+    font-family: Jura, serif;
+    font-size: 2rem;
+
+}
+
+.footer {
+    margin-right: 4%;
+    display: flex;
+}
+
+.reseaux {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 4%;
+}
+
+
+#copyright {
+    margin-top: 2%;
+    margin-left: 81%;
+    color: white;
+    font-size: 20px;
+}
