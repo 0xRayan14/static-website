@@ -2,7 +2,7 @@
 
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
     <title>InfoShop - S'enregistrer</title>
     <link rel="stylesheet" href="../css/enregistrer.css">
     <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
@@ -11,14 +11,50 @@
 <header>
     <div class="navbar">
         <div class="btn-header">
-            <a style="text-decoration:none" href="../index.html" class="navitem">Accueil</a>
+            <a id="accueil" style="text-decoration:none" href="../index.html" class="navitem">Accueil</a>
             <a style="text-decoration:none" href="../web/contact.html" class="navitem">Contact</a>
             <a style="text-decoration:none" href="../web/produits.html" class="navitem">Nos produits</a>
         </div>
     </div>
-    <h1>S'enregistrer</h1>
 </header>
 
 <body>
+
+    <div class="all">
+        <div class="design"><img src="../img/WebDesignDevelopmentVector%201.png" alt=""></div>
+        <div class="container">
+            <h1>S'enregistrer</h1>
+            <label for="fname">Nom</label>
+            <input type="text" id="fname" name="firstname">
+
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email">
+
+            <label for="motdepasse">Mot de passe</label>
+            <input type="password" id="motdepasse" name="motdepasse">
+
+            <p id="conditions">
+                En m'inscrivant, j'accepte les termes et conditions ainsi que la politique de confidentialité.</p>
+
+            <input type="submit" value="Créer un compte">
+
+            <p class="ou">-------------------- OU --------------------</p>
+            <div class="gafa">
+                <a href="https://google.com"><img class="google" src="../img/Google%20button.png" alt=""></a>
+                <a href="https://facebook.com"><img class="facebook" src="../img/Facebook.png" alt=""></a>
+                <a href="https://apple.com"><img class="apple" src="../img/Apple.png" alt=""></a>
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <div class="reseaux">
+            <a href="https://instagram.com" target="_blank"><img src="../img/instagram.png" alt=""/></a>
+            <a href="https://tiktok.com" target="_blank"><img src="../img/icons8-tiktok%201.png" alt=""/></a>
+        </div>
+        <p id="copyright">© 2023 InfoShop</p>
+    </div>
 </body>
 </html>

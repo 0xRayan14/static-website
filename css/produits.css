@@ -1,6 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@700&display=swap');
+
 body {
     background: linear-gradient(268deg, #F00 -29.51%, #2500BB 79.62%);
+    font-family: 'Jura', sans-serif;
+    margin: 0;
+    padding: 0;
+    animation: slideDown 1s;
+    width: 100%;
 }
+
+.navitem:hover {
+    opacity: .5;
+    transition: .5s;
+}
+
+#accueil {
+    margin-right: 7%;
+    margin-left: 1%;
+}
+
+
+@keyframes slideDown {
+    from {
+        transform: translateY(0px);
+        opacity: 0;
+    }
+
+
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
 
 h1  {
     margin-top: 2.5%;
@@ -11,46 +44,57 @@ h1  {
     color: white;
 }
 
-.navbar {
-    justify-content: center;
-    text-align: center;
-    display: flex;
-    width: 100%;
-    z-index: 1;
 
-
-}
 
 .btn-header {
     text-shadow: 0 4px 4px black;
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
     margin-top: 3%;
-    font-size: 35px;
-    margin-left: 4%;
-    margin-right: 4%;
-
+    font-family: Jura, serif;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
 }
 
+
 .navitem {
+    flex: 0 0 calc(11.3% - 1px);   /* flex-basis adjustment for margin */
     color: white;
-    font-family: Jura, serif;
+    font-size: 2rem;
+    margin-right: 4%;
+    margin-left: 4%;
+
+}
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column; /* Pour afficher les éléments en colonne au lieu de ligne */
+    }
+}
+
+/* Media query pour les écrans étroits (par exemple, smartphones) */
+@media screen and (max-width: 480px) {
+    .navbar {
+        font-size: 14px; /* Réduire la taille de la police pour les écrans plus petits */
+        margin-top: 2%; /* Réduire la marge supérieure pour les écrans plus petits */
+    }
 }
 
 .container {
+    width: 100%;
+    font-family: Jura, serif;
+    color: white;
     display: flex;
     flex-wrap: wrap;
-    margin-left: 4%;
-    margin-right: 4%;
     justify-content: space-between;
     align-items: center;
     text-align: center;
 }
 
 .item {
-    flex: 0 0 calc(15.43% - 1px);   /* flex-basis adjustment for margin */
-    margin: 100px;
+    flex: 0 0 calc(13.43% - 1px);   /* flex-basis adjustment for margin */
+    margin: 150px;
 }
 
 img {
@@ -72,6 +116,20 @@ img:hover {
 
 }
 
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Pour afficher les éléments en colonne au lieu de ligne */
+    }
+}
+
+/* Media query pour les écrans étroits (par exemple, smartphones) */
+@media screen and (max-width: 480px) {
+    .container {
+        font-size: 14px; /* Réduire la taille de la police pour les écrans plus petits */
+        margin-top: 2%; /* Réduire la marge supérieure pour les écrans plus petits */
+    }
+}
+
 .footer {
     margin-right: 4%;
     display: flex;
@@ -86,7 +144,21 @@ img:hover {
 
 #copyright {
     margin-top: 2%;
-    margin-left: 81%;
+    margin-left: 79.5%;
     color: white;
     font-size: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .footer {
+        flex-direction: column; /* Pour afficher les éléments en colonne au lieu de ligne */
+    }
+}
+
+/* Media query pour les écrans étroits (par exemple, smartphones) */
+@media screen and (max-width: 480px) {
+    .footer {
+        font-size: 14px; /* Réduire la taille de la police pour les écrans plus petits */
+        margin-top: 2%; /* Réduire la marge supérieure pour les écrans plus petits */
+    }
 }

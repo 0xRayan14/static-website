@@ -2,7 +2,7 @@
 
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
     <title>InfoShop - Contact</title>
     <link rel="stylesheet" href="../css/contact.css">
     <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
@@ -11,7 +11,7 @@
 <header>
     <div class="navbar">
         <div class="btn-header">
-            <a style="text-decoration:none" href="../index.html" class="navitem">Accueil</a>
+            <a id="accueil" style="text-decoration:none" href="../index.html" class="navitem">Accueil</a>
             <a style="text-decoration:none" href="../web/produits.html" class="navitem">Nos produits</a>
             <a style="text-decoration:none" href="../web/enregistrer.html" class="navitem">S'enregistrer</a>
         </div>
@@ -20,6 +20,30 @@
 </header>
 
 <body>
+    <div class="container">
+        <label for="fname">Nom</label>
+        <input type="text" id="fname" name="firstname">
 
+        <label for="email">Email</label>
+        <input type="text" id="email" name="email">
+
+        <label for="sujet">Sujet</label>
+        <input type="text" id="sujet" name="sujet">
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" style="padding:7%"></textarea>
+
+        <input type="submit" value="Envoyer">
+
+    </div>
+
+
+    <div class="footer">
+        <div class="reseaux">
+            <a href="https://instagram.com" target="_blank"><img src="../img/instagram.png" alt=""/></a>
+            <a href="https://tiktok.com" target="_blank"><img src="../img/icons8-tiktok%201.png" alt=""/></a>
+        </div>
+        <p id="copyright">© 2023 InfoShop</p>
+    </div>
 </body>
 </html>
