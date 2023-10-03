@@ -3,11 +3,36 @@
 body {
     background: linear-gradient(269deg, #F00 -36.84%, #411CD6 116.65%);
     font-family: 'Jura', sans-serif;
-    margin: 0;
-    padding: 0;
-    animation: slideDown 1.6s;
-    width: 99.81%;
+    animation: slideDown 1.3s;
+    margin-left: 4%;
+    margin-right: 4%;
 }
+
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 16px; /* Adjust font size for smaller screens */
+    }
+    .btn-header {
+        margin-top: 3%;
+        flex-direction: column;
+    }
+    .navitem {
+        font-size: 2vw;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+    .body {
+        margin-top: 2%;
+    }
+    .navitem {
+        font-size: 1.5vw;
+    }
+}
+
 
 .navitem:hover {
     opacity: .5;
@@ -29,8 +54,7 @@ body {
 }
 
 #accueil {
-    margin-right: 7%;
-    margin-left: 1%;
+    margin-right: 5%;
 }
 
 img:hover {
@@ -43,7 +67,7 @@ h1  {
     font-family: Jura, serif;
     justify-content: center;
     text-align: center;
-    font-size: 70px;
+    font-size: 3vw;
     color: white;
     }
 
@@ -61,30 +85,25 @@ h1  {
 
 
 .navitem {
-    flex: 0 0 calc(11.3% - 1px);   /* flex-basis adjustment for margin */
     color: white;
-    font-size: 2rem;
-    margin-right: 4%;
-    margin-left: 4%;
+    font-size: 1.65vw;
 
 }
 
 input[type=text], select, textarea {
     width: 100%;
-    padding: 1%;
     border-radius: 10px;
-    font-size: 25px;
+    font-size: 1.65vw;
     box-sizing: border-box;
-    margin-top: 1%;
 }
 
 input[type=submit] {
     background-color: white;
     display: block;
     margin: 2% auto;
-    font-size: 25px;
+    font-size: 1.65vw;
     font-family: Jura, serif;
-    height: 88px;
+    height: 70px;
     border-radius: 12px;
     width: 15%;
     color: black;
@@ -95,28 +114,33 @@ input[type=submit] {
 .container {
     color: white;
     font-family: Jura, serif;
-    font-size: 30px;
+    font-size: 1.65vw;
     border-radius: 10px;
-    margin-right: 20%;
-    margin-left: 20%;
+    margin-right: 16%;
+    margin-left: 16%;
 }
 
 .footer {
-    margin-top: 3.4%;
-    margin-right: 4%;
+    width: 100%;
+    margin-top: 11%;
     display: flex;
 }
 
 .reseaux {
     display: flex;
+    max-width: 100%;
     justify-content: space-between;
-    margin-left: 4%;
+}
+
+.reseaux img {
+    width: 3vw;
+    height: auto;
 }
 
 
 #copyright {
-    margin-top: 2%;
-    margin-left: 79.6%;
+    margin-left: 84%;
     color: white;
-    font-size: 20px;
+    margin-top: 2%;
+    font-size: 1vw;
 }

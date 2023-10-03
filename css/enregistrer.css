@@ -1,38 +1,59 @@
 @import url('https://fonts.googleapis.com/css2?family=Jura:wght@700&display=swap');
 
+
 body {
     background: linear-gradient(90deg, #F00 -17.44%, #2707A9 71.81%);
     font-family: 'Jura', sans-serif;
-    margin: 0;
+    margin-left: 4%;
+    margin-right: 4%;
     padding: 0;
-    width: 100%;
-    animation: slideDown 1.6s;
+    max-width: 100%;
+    animation: slideDown 1.3s;
 }
+
+/* Add media query for screens with a maximum width of 768px */
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 16px; /* Adjust font size for smaller screens */
+    }
+    .btn-header {
+        margin-top: 3%;
+        flex-direction: column;
+    }
+    .navitem {
+        font-size: 2vw;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+    .body {
+        margin-top: 2%;
+    }
+    .navitem {
+        font-size: 1.5vw;
+    }
+}
+
 
 #accueil {
-    margin-right: 7%;
-    margin-left: 1%;
+    margin-right: 5%;
 }
 
-
-.navitem:hover {
-    opacity: .5;
-    transition: .5s;
-}
-
+/* Keyframes animation */
 @keyframes slideDown {
     from {
         transform: translateY(0px);
         opacity: 0;
     }
-
-
-
     to {
         transform: translateY(0);
         opacity: 1;
     }
 }
+
 
 .btn-header {
     text-shadow: 0 4px 4px black;
@@ -48,18 +69,15 @@ body {
 
 
 .navitem {
-    flex: 0 0 calc(11.3% - 1px);   /* flex-basis adjustment for margin */
     color: white;
-    font-size: 2rem;
-    margin-right: 4%;
-    margin-left: 4%;
+    font-size: 1.65vw;
 
 }
 
 
 h1  {
     font-family: Jura, serif;
-    font-size: 70px;
+    font-size: 3vw;
     text-align: center;
     color: white;
 }
@@ -67,44 +85,47 @@ h1  {
 .container {
     color: white;
     font-family: Jura, serif;
-    margin-top: 2.5%;
-    font-size: 25px;
+    font-size: 1.3vw;
     border-radius: 10px;
     margin-left: 25%;
-    margin-right: 4%;
 }
 
 .all {
+    margin-top: 5%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
-
 .design {
-    margin-top: 7%;
-    margin-left: 4%;
+    max-width: 100%;
+    text-align: center;
+}
+
+/* Make the image responsive */
+.design img {
+    max-width: 100%;
+    height: auto;
 }
 
 input {
     width: 100%;
-    padding: 2%;
+    padding: 1%;
     border-radius: 10px;
-    font-size: 25px;
+    font-size: 1.65vw;
     box-sizing: border-box;
     margin-top: 2%;
 }
 
 #conditions {
-    font-size: 20px;
+    font-size: 1vw;
 }
 
 input[type=submit] {
     background-color: blue;
     display: block;
-    margin: 5% auto;
-    font-size: 25px;
+    font-size: 1.65vw;
     font-family: Jura, serif;
-    padding: 2%;
+    padding: 1%;
     border-radius: 10px;
     width: 100%;
     color: white;
@@ -112,35 +133,62 @@ input[type=submit] {
     cursor: pointer;
 }
 
+.oue {
+    width: 100%;
+    margin-top: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.ou1 {
+    width: 18vw;
+    height: 0.1vw;
+    background-color: white;
+}
+
+
+.ou2 {
+    width: 18vw;
+    height: 0.1vw;
+    background-color: white;
+}
+
 .ou {
     text-align: center;
 }
 
 .gafa {
+    margin-top: 3%;
     display: flex;
     justify-content: space-between;
 }
 
 .gafa img {
-    width: 125px;
+    width: 6vw;
 }
 
 .footer {
-    margin-right: 4%;
-    margin-top: 6%;
+    margin-top: 11%;
+    width: 100%;
     display: flex;
 }
 
 .reseaux {
     display: flex;
+    max-width: 100%;
     justify-content: space-between;
-    margin-left: 4%;
+}
+
+.reseaux img {
+    width: 3vw;
+    height: auto;
 }
 
 
 #copyright {
-    margin-top: 2%;
-    margin-left: 79.6%;
+    margin-left: 84%;
     color: white;
-    font-size: 20px;
+    margin-top: 2%;
+    font-size: 1vw;
 }

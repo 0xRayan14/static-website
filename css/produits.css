@@ -3,10 +3,10 @@
 body {
     background: linear-gradient(268deg, #F00 -29.51%, #2500BB 79.62%);
     font-family: 'Jura', sans-serif;
-    margin: 0;
+    margin-left: 4%;
+    margin-right: 4%;
     padding: 0;
-    animation: slideDown 1s;
-    width: 100%;
+    animation: slideDown 1.3s;
 }
 
 .navitem:hover {
@@ -15,10 +15,8 @@ body {
 }
 
 #accueil {
-    margin-right: 7%;
-    margin-left: 1%;
+    margin-right: 5%;
 }
-
 
 @keyframes slideDown {
     from {
@@ -40,7 +38,7 @@ h1  {
     font-family: Jura, serif;
     justify-content: center;
     text-align: center;
-    font-size: 70px;
+    font-size: 3vw;
     color: white;
 }
 
@@ -60,46 +58,55 @@ h1  {
 
 
 .navitem {
-    flex: 0 0 calc(11.3% - 1px);   /* flex-basis adjustment for margin */
     color: white;
-    font-size: 2rem;
-    margin-right: 4%;
-    margin-left: 4%;
+    font-size: 1.65vw;
 
 }
+
 @media screen and (max-width: 768px) {
-    .navbar {
-        flex-direction: column; /* Pour afficher les éléments en colonne au lieu de ligne */
+    body {
+        font-size: 16px; /* Adjust font size for smaller screens */
+    }
+    .btn-header {
+        margin-top: 3%;
+        flex-direction: column;
+    }
+    .navitem {
+        font-size: 2vw;
     }
 }
 
-/* Media query pour les écrans étroits (par exemple, smartphones) */
 @media screen and (max-width: 480px) {
-    .navbar {
-        font-size: 14px; /* Réduire la taille de la police pour les écrans plus petits */
-        margin-top: 2%; /* Réduire la marge supérieure pour les écrans plus petits */
+    body {
+        font-size: 14px;
+    }
+    .body {
+        margin-top: 2%;
+    }
+    .navitem {
+        font-size: 1.5vw;
     }
 }
 
 .container {
     width: 100%;
-    font-family: Jura, serif;
+    font-family: Jura, sans-serif;
     color: white;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
     text-align: center;
 }
 
 .item {
     flex: 0 0 calc(13.43% - 1px);   /* flex-basis adjustment for margin */
-    margin: 150px;
+    margin: 7vw;
 }
 
 img {
     width: 100%;
-    max-height: 300px;
+    max-height: 15vw;
 
 }
 
@@ -112,41 +119,33 @@ img:hover {
 .produits {
     color: white;
     font-family: Jura, serif;
-    font-size: 2rem;
-
+    font-size: 1.65vw;
 }
 
-@media screen and (max-width: 768px) {
-    .container {
-        flex-direction: column; /* Pour afficher les éléments en colonne au lieu de ligne */
-    }
-}
-
-/* Media query pour les écrans étroits (par exemple, smartphones) */
-@media screen and (max-width: 480px) {
-    .container {
-        font-size: 14px; /* Réduire la taille de la police pour les écrans plus petits */
-        margin-top: 2%; /* Réduire la marge supérieure pour les écrans plus petits */
-    }
-}
 
 .footer {
-    margin-right: 4%;
+    width: 100%;
+    margin-top: 3%;
     display: flex;
 }
 
 .reseaux {
     display: flex;
+    max-width: 100%;
     justify-content: space-between;
-    margin-left: 4%;
+}
+
+.reseaux img {
+    width: 3vw;
+    height: auto;
 }
 
 
 #copyright {
-    margin-top: 2%;
-    margin-left: 79.5%;
+    margin-left: 84%;
     color: white;
-    font-size: 20px;
+    margin-top: 2%;
+    font-size: 1vw;
 }
 
 @media screen and (max-width: 768px) {
