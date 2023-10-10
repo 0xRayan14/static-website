@@ -7,6 +7,7 @@ body {
     margin-right: 4%;
     padding: 0;
     animation: slideDown 1.3s;
+    min-height: 150vh;
 }
 
 .navitem:hover {
@@ -118,6 +119,8 @@ h1  {
     }
 }
 
+
+
 .texte {
     color: white;
     font-size: 1.8vw;
@@ -134,9 +137,8 @@ h1  {
 
 #youtube {
     margin-top: 4%;
-    width: 50%;
-    margin-left: 25%;
-    margin-right: 25%;
+    height: 55vh;
+    width: 100%;
 }
 
 #retrouvez-nous {
@@ -149,14 +151,14 @@ h1  {
 
 #google {
     width: 100%;
-    height: 600px;
+    height: 55vh;
     justify-content: center;
     margin-bottom: 2%;
 }
 
 .footer {
+    margin-top: auto;
     width: 100%;
-    margin-top: 3%;
     display: flex;
 }
 
