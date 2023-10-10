@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Jura:wght@700&display=swap');
 
+
 body {
     background: linear-gradient(268deg, #F00 -29.51%, #2500BB 79.62%);
     font-family: 'Jura', sans-serif;
-    margin-left: 4%;
-    margin-right: 4%;
+    margin: 4%;
     padding: 0;
     animation: slideDown 1.3s;
-    min-height: 150vh;
+
 }
 
 .navitem:hover {
@@ -56,7 +56,7 @@ h1  {
     color: white;
 }
 
-#description {
+.description {
     color: white;
     margin-top: 6%;
     font-size: 1.65vw;
@@ -65,7 +65,7 @@ h1  {
 }
 
 
-#titre_qualités {
+.titre_qualités {
     color: white;
     margin-top: 10%;
     text-align: center;
@@ -94,31 +94,6 @@ h1  {
     flex: 0 0 calc(0% - 1px);   /* flex-basis adjustment for margin */
 }
 
-@media screen and (max-width: 768px) {
-    body {
-        font-size: 16px; /* Adjust font size for smaller screens */
-    }
-    .btn-header {
-        margin-top: 3%;
-        flex-direction: column;
-    }
-    .navitem {
-        font-size: 2vw;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    body {
-        font-size: 14px;
-    }
-    .body {
-        margin-top: 2%;
-    }
-    .navitem {
-        font-size: 1.5vw;
-    }
-}
-
 
 
 .texte {
@@ -127,7 +102,7 @@ h1  {
 
 }
 
-#presentation {
+.presentation {
     color: white;
     margin-top: 6%;
     text-align: center;
@@ -135,13 +110,15 @@ h1  {
 
 }
 
-#youtube {
+.youtube {
     margin-top: 4%;
-    height: 55vh;
+    height: 60vw;
     width: 100%;
+    margin-bottom: 2%;
 }
 
-#retrouvez-nous {
+
+.retrouvez-nous {
     color: white;
     margin-top: 6%;
     text-align: center;
@@ -149,15 +126,16 @@ h1  {
 
 }
 
-#google {
+.google {
+    margin-top: 4%;
     width: 100%;
-    height: 55vh;
+    height: 60vw;
     justify-content: center;
     margin-bottom: 2%;
 }
 
 .footer {
-    margin-top: auto;
+    margin-bottom: 0;
     width: 100%;
     display: flex;
 }
@@ -174,9 +152,110 @@ h1  {
 }
 
 
-#copyright {
+.copyright {
     margin-left: 84%;
     color: white;
     margin-top: 2%;
     font-size: 1vw;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 3vw; /* Adjust font size for smaller screens */
+    }
+
+    .navitem {
+        font-size: 3vw;
+    }
+
+    .h1 {
+        font-size: 4.5vw;
+    }
+
+    .description {
+        font-size: 2.5vw;
+        width: 50%;
+    }
+
+    .titre_qualités {
+        font-size: 2.5vw;
+    }
+
+    .texte {
+        font-size: 2.5vw;
+    }
+
+    .presentation {
+        font-size: 2.5vw;
+    }
+
+    .retrouvez-nous {
+        font-size: 2.5vw;
+    }
+
+    .copyright {
+        margin-top: 4%;
+        margin-left: 68.4%;
+        font-size: 2vw;
+    }
+
+    .reseaux img{
+        width: 5.5vw;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .body {
+        font-size: 3vw;
+        margin-top: 2%;
+    }
+
+    .navitem {
+        font-size: 3.5vw;
+    }
+
+    .h1 {
+        font-size: 5vw;
+    }
+
+    .description {
+        font-size: 3vw;
+        width: 50%;
+    }
+
+    .titre_qualités {
+        font-size: 3vw;
+    }
+
+    .texte {
+        font-size: 3vw;
+    }
+
+    .presentation {
+        font-size: 3vw;
+    }
+
+    .retrouvez-nous {
+        font-size: 3vw;
+    }
+
+    .copyright {
+        margin-top: 4%;
+        margin-left: 68.4%;
+        font-size: 2vw;
+    }
+
+    .reseaux img{
+        width: 6vw;
+    }
+}
+
+@media screen and (max-height: 1000px) {
+    .youtube {
+        height: 32vh;
+    }
+
+    .google {
+        height: 32vh;
+    }
 }

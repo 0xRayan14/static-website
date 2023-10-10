@@ -1,11 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Jura:wght@700&display=swap');
 
+html {
+    height: 100%;
+}
 
 body {
     background: linear-gradient(90deg, #F00 -17.44%, #2707A9 71.81%);
     font-family: 'Jura', sans-serif;
-    margin-left: 4%;
-    margin-right: 4%;
+    margin: 4%;
     padding: 0;
     max-width: 100%;
     animation: slideDown 1.3s;
@@ -14,12 +16,9 @@ body {
 /* Add media query for screens with a maximum width of 768px */
 @media screen and (max-width: 768px) {
     body {
-        font-size: 16px; /* Adjust font size for smaller screens */
+        font-size: 2vw; /* Adjust font size for smaller screens */
     }
-    .btn-header {
-        margin-top: 3%;
-        flex-direction: column;
-    }
+
     .navitem {
         font-size: 2vw;
     }
@@ -27,7 +26,7 @@ body {
 
 @media screen and (max-width: 480px) {
     body {
-        font-size: 14px;
+        font-size: 1.5vw;
     }
     .body {
         margin-top: 2%;
@@ -36,7 +35,6 @@ body {
         font-size: 1.5vw;
     }
 }
-
 
 #accueil {
     margin-right: 5%;
@@ -169,7 +167,6 @@ input[type=submit] {
 }
 
 .footer {
-    margin-top: 11%;
     width: 100%;
     display: flex;
 }
